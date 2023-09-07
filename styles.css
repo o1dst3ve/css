@@ -15,19 +15,12 @@ margin: 0;
 text-decoration: underline;
 margin-bottom: 20px;
 
-
-}
-
-
-.hobby{
-
-
 }
 
 
 .container{
     max-width: 750px;
-
+    margin:0 auto
 }
 
 
