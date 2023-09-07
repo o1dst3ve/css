@@ -5,6 +5,14 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .avatar {
   position: relative;
   width: 300px;
@@ -32,7 +40,7 @@ body {
   text-transform: none;
 }
 
-.avatar .rat-jam {
+.avatar .peepoLeave {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -41,10 +49,10 @@ body {
   border-radius: 50%;
   overflow: hidden;
   transform: scale(0);
-  transition: all 0, 5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.avatar:hover .rat-jam {
+.avatar:hover .peepoLeave {
   transform: scale(4);
 }
 
@@ -67,16 +75,16 @@ body {
 }
 
 .bg-red {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.438);
   margin-top: 20px;
 }
 
 .bg-orange {
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.521);
 }
 
 .bg-gray {
-  background-color: #f3f3f3;
+  background-color: #f3f3f3bb;
   color: #333;
   margin-bottom: 20px;
 }
@@ -101,4 +109,8 @@ body {
   height: 250px;
   object-fit: cover;
   border: 1px solid white;
+}
+
+.credit {
+  margin-left: 300px;
 }
