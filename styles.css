@@ -1,0 +1,57 @@
+body {
+    background-color: white ;
+    color:black ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.avatar{
+    width: 300px;
+    border-radius: 28px
+}
+
+.info {
+display: flex;
+margin: 0;
+text-decoration: underline;
+margin-bottom: 20px;
+
+
+}
+
+
+.hobby{
+
+
+}
+
+
+.container{
+    max-width: 750px;
+
+}
+
+
+.bg-red{
+    background-color: red;
+    margin-top: 20px;
+
+}
+
+
+.bg-orange{
+    background-color: orange;
+
+}
+
+
+.card{
+    padding: 15px 20px;
+    border-radius: 20px;
+
+
+}
+
+.info-text{
+    margin-left: 20px;
+
+}
