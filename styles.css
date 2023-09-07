@@ -15,7 +15,7 @@ body {
 
 .avatar {
   position: relative;
-  width: 300px;
+  width: 350px;
   border-radius: 28px;
 }
 
@@ -46,19 +46,18 @@ body {
 
 .avatar .peepoClown {
   position: absolute;
-  width: 125px;
-  height: 125px;
-  top: 45px;
-  left: 90px;
+  width: 155px;
+  height: 212px;
+  top: 41px;
+  left: 102px;
   border-radius: 50%;
   overflow: hidden;
   transform: scale(0);
-  transition: all 0.2s ease-in;
   object-fit: contain;
 }
 
 .avatar:hover .peepoClown {
-  transform: scale(1, 1.2) rotate(7deg);
+  transform: scale(1, 1.2);
 }
 
 .info {
@@ -79,12 +78,12 @@ body {
 }
 
 .bg-red {
-  background-color: #F47174;
+  background-color: #ff0004d3;
   color: #333;
 }
 
 .bg-orange {
-  background-color: #EEEE9B;
+  background-color: #fbeb5ddc;
   color: #333;
 }
 
@@ -96,9 +95,9 @@ body {
 .card {
   padding: 15px 20px;
   border-radius: 20px;
-  border-radius: 3px;
+  border-radius: 20px;
   margin-bottom: 10px;
-  box-shadow: 0 0 7px rgba(255, 255, 255, .5);
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
 }
 
 .card h1,
@@ -111,7 +110,7 @@ body {
 
 .card li {
   margin-bottom: 5px;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   cursor: default;
   width: fit-content;
 }
@@ -126,10 +125,13 @@ body {
 
 .about li {
   margin-bottom: 2px;
+  font-size: 0.9em;
 }
 
 .info-text {
-  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .summoners {
