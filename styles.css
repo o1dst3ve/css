@@ -1,57 +1,80 @@
 body {
-    background-color: white ;
-    color:black ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.avatar{
-    width: 300px;
-    border-radius: 28px
+.avatar {
+  position: relative;
+  width: 300px;
+  border-radius: 28px;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.ph-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ph-info img {
+  height: 40px;
+}
+
+.ph-info-text {
+  text-transform: none;
+}
+
+.avatar .rat-jam {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .info {
-display: flex;
-margin: 0;
-text-decoration: underline;
-margin-bottom: 20px;
-
+  display: flex;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-
-.container{
-    max-width: 750px;
-    margin:0 auto
+.info-text {
+  text-decoration: underline;
 }
 
-
-.bg-red{
-    background-color: red;
-    margin-top: 20px;
-
+.container {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
-
-.bg-orange{
-    background-color: orange;
-
+.bg-red {
+  background-color: red;
+  margin-top: 20px;
 }
 
-
-.card{
-    padding: 15px 20px;
-    border-radius: 20px;
-
-
+.bg-orange {
+  background-color: orange;
 }
 
-.info-text{
-    margin-left: 20px;
-
+.card {
+  padding: 15px 20px;
+  border-radius: 20px;
 }
 
+.info-text {
+  margin-left: 20px;
+}
 
-.lone_druid{
-
-    width: 400px;
-
+.lone_druid {
+  width: 400px;
 }
