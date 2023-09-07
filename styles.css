@@ -1,6 +1,6 @@
 body {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -36,10 +36,16 @@ body {
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 5px;
-  left: 5px;
+  top: 120px;
+  left: 150px;
   border-radius: 50%;
   overflow: hidden;
+  transform: scale(0);
+  transition: all 0, 5s ease-in;
+}
+
+.avatar:hover .rat-jam {
+  transform: scale(4);
 }
 
 .info {
@@ -49,11 +55,14 @@ body {
 }
 
 .info-text {
-  text-decoration: underline;
+}
+
+.about {
+  display: flex;
 }
 
 .container {
-  max-width: 750px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -66,6 +75,12 @@ body {
   background-color: orange;
 }
 
+.bg-gray {
+  background-color: #f3f3f3;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 .card {
   padding: 15px 20px;
   border-radius: 20px;
@@ -75,11 +90,15 @@ body {
   margin-left: 20px;
 }
 
-.lone_druid {
-  width: 400px;
+.summoners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.lycan{
- width: 400px;
-
+.summoners img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid white;
 }
