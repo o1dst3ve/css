@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Лучше с пацанами под фонтан, чем с чертями в трон.",
     "Счастье — это когда в Доте нет больных, в таверне нет родных, среди тиммейтов нет гнилых."
   ];
-  const AUTHORS = ["artur_matix", "CornFY", "o1dst3ve", "Rochersha", "fothr1s", "tirexdxd", "boy_abstract", "blooming_c0rpse", "andreyhed", "chpopik", "gundrik", "yana_ciist", "seconduniQuee", "katyaxoxo", "katyahihi", "katyahihi"];
+  const AUTHORS = ["artur_matix", "CornFY", "o1dst3ve", "Rochersha", "fothr1s", "tirexdxd", "boy_abstract", "blooming_c0rpse", "andreyhed", "chpopik", "gundrik", "yana_ciist", "seconduniQuee", "katyaxoxo", "katyaxexe", "katyaxixi"];
   const RANDOMS = "1,4,2,5,3,4,4,2,1,6,4,3,2,5,1,4,2,5,3,4,4,2,1,6,4,3,2,5,1,4,2,5,3,4,4,2,1,6,4,3,2,5,1,4,2,5,3,4,4,2,1,6,4,3,2,5,1,4,2,5,3,4,4,2,1,6,4,3,2,5,1,4,2,5,3,4,4,2,1,6,4,3,2,5";
   let currentQuote = QUOTES[0];
   let currentAuthor = AUTHORS[0];
