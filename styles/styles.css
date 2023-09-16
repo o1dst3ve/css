@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&family=Roboto:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 body {
@@ -31,17 +30,6 @@ body {
   object-fit: cover;
 }
 
-.ph-info {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 5px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin-left: -12px;
-  margin-top: -10px;
-}
-
 .avatar .peepoClown {
   position: absolute;
   width: 155px;
@@ -51,7 +39,6 @@ body {
   overflow: hidden;
   opacity: 0;
   object-fit: contain;
-
 }
 
 .avatar:hover .peepoClown {
@@ -134,21 +121,6 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px 0;
-}
-
-.bg-red {
-  background-color: #ff0004d3;
-  color: #333;
-}
-
-.bg-orange {
-  background-color: #fbeb5ddc;
-  color: #333;
-}
-
-.bg-gray {
-  background-color: #f3f3f3;
-  color: #333;
 }
 
 .card {
@@ -239,15 +211,15 @@ body {
 }
 
 .summoner.lone-druid {
-  background-image: url("./images/lone-druid-bg.jpeg");
+  background-image: url("../images/lone-druid-bg.jpeg");
 }
 
 .summoner.lycan {
-  background-image: url("./images/lycan-bg.png");
+  background-image: url("../images/lycan-bg.png");
 }
 
 .summoner.visage {
-  background-image: url("./images/visage-bg.png");
+  background-image: url("../images/visage-bg.png");
   background-position: -30px center;
 }
 
@@ -345,4 +317,113 @@ body {
 
 .credits a:hover {
   text-decoration: underline;
+}
+
+
+/* QUOTES */
+
+.random-quotes {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+  height: 200px;
+  background-color: #222;
+}
+
+.random-quotes .quote {
+  position: relative;
+  padding: 10px;
+  font-size: 1.45rem;
+  max-width: 700px;
+  color: rgba(255, 255, 255, .8);
+  text-align: center;
+  font-family: Merriweather serif;
+}
+
+.random-quotes .quote::before {
+  content: "\201F";
+  font-size: 300px;
+  color: red;
+  top: -70px;
+  left: -50px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.8s ease-out;
+}
+
+.random-quotes .quote-author {
+  font-size: .9rem;
+  transform: scale(1.5, 1);
+  opacity: 0;
+  color: rgba(255, 0, 0, .6);
+  transition: opacity 1.8s .3s ease-out;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.random-quotes .quote-line {
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  opacity: .2;
+  transition: opacity 1.8s ease-out;
+}
+
+.random-quotes .top-line {
+  width: 300px;
+  margin-bottom: auto;
+}
+
+.random-quotes .bottom-line {
+  width: 120px;
+  margin-top: auto;
+}
+
+.random-quotes.animate .word {
+  opacity: 1;
+}
+
+.random-quotes.animate .quote::before {
+  opacity: .2;
+}
+
+.random-quotes.animate .quote-line {
+  opacity: 1;
+}
+
+.random-quotes.animate .quote-author {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.word {
+  opacity: 0;
+}
+
+.word.animate-1 {
+  transition: opacity 1.8s ease-out;
+}
+
+.word.animate-2 {
+  transition: opacity 1.8s .13s ease-out;
+}
+
+.word.animate-3 {
+  transition: opacity 1.8s .2s ease-out;
+}
+
+.word.animate-4 {
+  transition: opacity 1.8s .35s ease-out;
+}
+
+.word.animate-5 {
+  transition: opacity 1.8s .48s ease-out;
+}
+
+.word.animate-6 {
+  transition: opacity 1.8s .6s ease-out;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Cornfy</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -99,13 +99,11 @@
         </div>
       </div>
 
-      <div class="card bg-gray quotes">
-        <h2>Цитаты Великих</h2>
-        <ul type="none">
-          <li>*Умер* = "Чат Нахуй Вы Меня Отвлекаете"</li>
-          <li>*Умер* = "Артур Матикс Ты Заебал Со Своими Донатами"</li>
-          <li>*Проебывает Мид С Позором* = "У Них Смурфер В Команде"</li>
-        </ul>
+      <div class="random-quotes" id="quote-container">
+        <div class="quote-line top-line"></div>
+        <div class="quote" id="quote-wrapper"></div>
+        <div class="quote-author" id="quote-author"></div>
+        <div class="quote-line bottom-line"></div>
       </div>
 
       <div class="card bg-orange hobby">
@@ -145,5 +143,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
