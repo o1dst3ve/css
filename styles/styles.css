@@ -438,28 +438,34 @@ body {
   opacity: 0;
 }
 
-.word.animate-1 {
-  transition: opacity 1.8s ease-out;
+.word.animate-1,
+.word-6 {
+  transition: opacity 1.8s linear;
 }
 
-.word.animate-2 {
-  transition: opacity 1.8s .13s ease-out;
+.word.animate-2,
+.word-5 {
+  transition: opacity 1.8s .13s linear;
 }
 
-.word.animate-3 {
-  transition: opacity 1.8s .2s ease-out;
+.word.animate-3,
+.word-4 {
+  transition: opacity 1.8s .2s linear;
 }
 
-.word.animate-4 {
-  transition: opacity 1.8s .35s ease-out;
+.word.animate-4,
+.word-3 {
+  transition: opacity 1.8s .35s linear;
 }
 
-.word.animate-5 {
-  transition: opacity 1.8s .48s ease-out;
+.word.animate-5,
+.word-2 {
+  transition: opacity 1.8s .48s linear;
 }
 
-.word.animate-6 {
-  transition: opacity 1.8s .6s ease-out;
+.word.animate-6,
+.word-1 {
+  transition: opacity 1.8s .6s linear;
 }
 
 .credits {

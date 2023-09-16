@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let author = getRandomItem(AUTHORS, currentAuthor);
     let quoteHtml = quote
       .split(" ")
-      .map((q, i) => `<span class="word animate-${+RANDOMS.split(",")[i]}">${q}</span>`)
+      .map((q, i) => `<span class="word word-${+RANDOMS.split(",")[i]} animate-${+RANDOMS.split(",")[i]}">${q}</span>`)
       .join(" ");
 
     quoteContainer.classList.remove("animate");
