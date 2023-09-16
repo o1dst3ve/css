@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -140,13 +140,73 @@ body {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 20px;
+  perspective: 1000px;
 }
 
-.summoners img {
+.summoner {
+  position: relative;
   width: 250px;
   height: 250px;
-  object-fit: cover;
-  border: 1px solid white;
+  background-image: url("./images/ld-main.jpeg");
+  background-size: cover;
+  background-position: -100px center;
+  transition: rotate .5s ease-out, box-shadow .5s ease-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .7);
+  transform-style: preserve-3d;
+}
+
+.summoner::before  {
+  content: "";
+  position: absolute;  
+  inset: 0;
+  background-image: radial-gradient(circle 300px, transparent, black);
+  transition: opacity .5s ease-out;
+  opacity: 0;
+}
+
+.summoner:hover {
+  rotate: x 35deg;
+  box-shadow: 0 40px 15px -15px rgba(0, 0, 0, .7);
+}
+
+.summoner:hover .appear-img {
+  opacity: 1;
+  translate: 0 -20px;
+  rotate: x -35deg;
+}
+
+.summoner:hover .text-img {
+  translate: 0 -20px;
+  rotate: x -35deg;
+  opacity: 1;
+  transition: opacity .5s .3s ease-out, rotate .5s ease-out, translate .5s .3s ease-out;
+}
+
+.appear-img {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  opacity: 0;
+  rotate: x 0deg;
+  translate: 0 40px;
+  transform: translateZ(100px);
+  transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out;
+}
+
+.summoner:hover::before {
+  opacity: 1;
+}
+
+.text-img {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 0;
+  rotate: x 0deg;
+  opacity: 0;
+  translate: 0 0;
+  transform: translateZ(100px);
+  transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out;
 }
 
 .credits {
