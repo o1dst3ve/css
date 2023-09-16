@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&family=Roboto:wght@100;300;400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 body {
@@ -44,34 +44,50 @@ body {
   filter: blur(1000px);
 }
 
-
 .avatar {
   position: relative;
-  width: 260px;
-  height: 260px;
+  width: 236px;
+  height: 236px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.avatar img {
+.avatar::before {
+  content: "";
   width: 100%;
   height: 100%;
+  inset: 0;
+  background-image: radial-gradient( circle farthest-corner at 0% 50%,  rgb(22, 18, 67) 0%, rgb(52, 12, 75) 90% );
+  position: absolute;
+  z-index: 5;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  position: absolute;
+  left: 3px;
+  top: 3.5px;
   object-fit: cover;
+  z-index: 10;
+  border-radius: 50%;
 }
 
 .avatar .peepoClown {
   position: absolute;
   width: 155px;
-  top: -5px;
-  left: 45px;
+  top: 0px;
+  left: 35px;
   border-radius: 50%;
   overflow: hidden;
   opacity: 0;
   object-fit: contain;
+  z-index: 1000;
 }
 
 .avatar:hover .peepoClown {
-  transform: scale(1.1, 1.5);
+  transform: scale(1, 1.3);
   opacity: 1;
   transition: opacity 2s ease;
 }
@@ -84,15 +100,52 @@ body {
 }
 
 .info-title {
-  margin-bottom: 20px;
-  font-size: 34px;
+  font-size: 26px;
   letter-spacing: 2px;
+  color: #ddd;
+}
+
+.info-subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  margin-left: 2px;
+  color: rgba(255, 255, 255, .7);
+  font-weight: 300;
+}
+
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-info .list-item {
+  margin-bottom: 20px;
+  font-size: 1.15em;
+  display: flex;
+  flex: 0 0 30%;
+  flex-direction: column;
+}
+
+.main-info .list-item-title {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, .5);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.main-info .list-item-data {
+  padding-left: 3px;
+  color: rgba(255, 255, 255, .8);
 }
 
 .socials {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+}
+
+.socials .list-item-title {
+  margin-bottom: 0;
 }
 
 .socials a {
@@ -170,15 +223,6 @@ body {
   margin-left: 70px;
   display: flex;
   flex-direction: column;
-}
-
-.details .list-item {
-  margin-bottom: 6px;
-  font-size: 1.1em;
-}
-
-.details .list-item-title {
-  font-weight: bold;
 }
 
 .summoners {
@@ -308,30 +352,6 @@ body {
   transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out, scale .5s ease-out, text-shadow .3s ease-out;
 }
 
-.credits {
-  margin: 80px 0 0;
-  font-size: 0.85em;
-  opacity: .35;
-  transition: opacity .3s ease-out;
-  width: fit-content;
-}
-
-.credits:hover {
-  opacity: 1;
-}
-
-.credits a:visited,
-.credits a:active,
-.credits a {
-  font-weight: normal;
-  color: #fff;
-  text-decoration: none;
-}
-
-.credits a:hover {
-  text-decoration: underline;
-}
-
 
 /* QUOTES */
 .random-quotes {  
@@ -340,6 +360,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 200px;
+  overflow: hidden;
 }
 
 .random-quotes .quote {
@@ -434,4 +455,29 @@ body {
 
 .word.animate-6 {
   transition: opacity 1.8s .6s ease-out;
+}
+
+.credits {
+  margin: 80px 0 0;
+  font-size: 0.85em;
+  opacity: .35;
+  transition: opacity .3s ease-out;
+  width: fit-content;
+}
+
+.credits:hover {
+  opacity: 1;
+}
+
+.credits a:visited,
+.credits a:active,
+.credits a {
+  font-weight: normal;
+  color: #fff;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
