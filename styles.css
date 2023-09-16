@@ -168,12 +168,28 @@ body {
   position: relative;
   width: 250px;
   height: 320px;
-  background-image: url("./images/ld-main.jpeg");
   background-size: cover;
   background-position: -130px center;
   transition: rotate .5s ease-out, box-shadow .5s ease-out;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
   transform-style: preserve-3d;
+  margin: 10px;
+}
+
+.summoner.lone-druid {
+  background-image: url("./images/lone-druid-bg.jpeg");
+}
+
+.summoner.lycan {
+  background-image: url("./images/lycan-bg.png");
+}
+
+.summoner.lycan .appear-img {
+  scale: 1.2 1.4;
+}
+
+.summoner.lone-druid .appear-img {
+  scale: 1.2 1;
 }
 
 .summoner::before  {
@@ -199,7 +215,7 @@ body {
 .summoner:hover .text-img {
   translate: 0 -35px;
   rotate: x -45deg;
-  scale: 1.2;
+  scale: 1.1  ;
   opacity: 1;
   text-shadow: 0px 0px 12px rgba(255,255,255,0.93);
   transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out, scale .5s ease-out, text-shadow .3s ease-out;
@@ -232,7 +248,7 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
   opacity: .6;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-align: center;
   color: rgba(255, 255, 255, .8);
   transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out, scale .5s ease-out, text-shadow .3s ease-out;
