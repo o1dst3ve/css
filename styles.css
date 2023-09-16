@@ -189,7 +189,7 @@ body {
 }
 
 .summoner.lone-druid .appear-img {
-  scale: 1.2 1;
+  scale: 1.2 1.2;
 }
 
 .summoner::before  {
