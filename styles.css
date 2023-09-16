@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
-  /* background-color: black; */
+  background-color: #090909;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -138,9 +140,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 30px;
   margin-bottom: 20px;
   perspective: 1000px;
+  padding: 30px 10px;
+  background-color: #222;
+}
+
+.summoners .title {
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;;
+}
+
+.heroes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .summoner {
@@ -151,7 +170,7 @@ body {
   background-size: cover;
   background-position: -100px center;
   transition: rotate .5s ease-out, box-shadow .5s ease-out;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
   transform-style: preserve-3d;
 }
 
@@ -166,7 +185,7 @@ body {
 
 .summoner:hover {
   rotate: x 35deg;
-  box-shadow: 0 40px 15px -15px rgba(0, 0, 0, .7);
+  box-shadow: 0 40px 15px -15px rgba(0, 0, 0, 1);
 }
 
 .summoner:hover .appear-img {
@@ -179,7 +198,7 @@ body {
   translate: 0 -20px;
   rotate: x -35deg;
   opacity: 1;
-  transition: opacity .5s .3s ease-out, rotate .5s ease-out, translate .5s .3s ease-out;
+  transition: opacity .5s .4s ease-out, rotate .5s ease-out, translate .5s .4s ease-out;
 }
 
 .appear-img {
@@ -206,6 +225,12 @@ body {
   opacity: 0;
   translate: 0 0;
   transform: translateZ(100px);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgba(255, 255, 255, .8);
+  text-shadow: 0px 0px 12px rgba(255,255,255,0.93);
   transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out;
 }
 
