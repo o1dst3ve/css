@@ -68,8 +68,9 @@ body {
 
 .socials a {
   margin-right: 14px;
-  transition: all .2s ease-out;
-  opacity: .8;
+  transition: color .2s ease-out, opacity .2s ease-out;
+  opacity: .6;
+  color: #fff;
 }
 
 .socials a:hover {
@@ -78,13 +79,11 @@ body {
 
 .socials a.twitch {
   font-size: 26px;
-  color: #9146FF;
   transform: scale(1.3, 1.1);
 }
 
 .socials a.vk {
   font-size: 32px;
-  color: #0077FF;
   transform: scale(1.2, 1.05);
   position: relative;
   bottom: 1px;
@@ -106,15 +105,29 @@ body {
 
 .socials a.youtube {
   font-size: 34px;
-  color: #CD201F;
   transform: scale(1, 1.15);
 }
 
 .socials a.tg {
   font-size: 30px;
-  color: #229ED9;
   position: relative;
   bottom: 1px;
+}
+
+.socials a.tg:hover {
+  color: #229ED9;
+}
+
+.socials a.youtube:hover {
+  color: #CD201F;
+}
+
+.socials a.vk:hover {
+  color: #0077FF;
+}
+
+.socials a.twitch:hover {
+  color: #9146FF;
 }
 
 .container {
