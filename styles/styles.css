@@ -358,6 +358,7 @@ body {
   transform: translateZ(100px);
   scale: 1.1 1.2;
   transition: opacity .5s ease-out, rotate .5s ease-out, translate .5s ease-out;
+  pointer-events: none;
 }
 
 .summoner:hover::before {
