@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 body {
   background-color: #090909;
   color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
@@ -22,6 +23,13 @@ body {
   border-radius: 28px;
 }
 
+.avatar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle 250px, transparent  0, black 80%);
+}
+
 .avatar img {
   width: 100%;
 }
@@ -37,30 +45,22 @@ body {
   margin-top: -10px;
 }
 
-.ph-info img {
-  height: 40px;
-}
-
-.ph-info-text {
-  text-transform: uppercase;
-  font-size: 0.8em;
-  margin-left: -3px;
-}
-
 .avatar .peepoClown {
   position: absolute;
   width: 155px;
-  height: 212px;
-  top: 41px;
-  left: 102px;
+  top: 50px;
+  left: 90px;
   border-radius: 50%;
   overflow: hidden;
-  transform: scale(0);
+  opacity: 0;
   object-fit: contain;
+
 }
 
 .avatar:hover .peepoClown {
-  transform: scale(1, 1.2);
+  transform: scale(1.1, 1.5);
+  opacity: 1;
+  transition: opacity 2s ease;
 }
 
 .info {
@@ -69,9 +69,53 @@ body {
   margin-bottom: 20px;
 }
 
-.about {
+.info-title {
+  margin-bottom: 20px;
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+
+.socials {
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.socials a {
+  margin-right: 14px;
+  transition: all .2s ease-out;
+}
+
+.socials a.twitch {
+  font-size: 26px;
+  color: #9146FF;
+}
+
+.socials a.vk {
+  font-size: 32px;
+  color: #0077FF;
+  transform: scale
+}
+
+.socials a.ph img {
+  height: 31px;
+  border-radius: 3px;
+  border: 1px solid #222;
+  padding: 2px 0;
+}
+
+.socials a.youtube {
+  font-size: 34px;
+  color: #CD201F;
+}
+
+.socials a.tg {
+  font-size: 28px;
+  color: #229ED9;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
 }
 
 .container {
@@ -126,15 +170,21 @@ body {
   font-style: italic;
 }
 
-.about li {
-  margin-bottom: 2px;
-  font-size: 0.9em;
-}
-
-.info-text {
+.details {
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details .list-item {
+  margin-bottom: 6px;
+  font-size: 1.1em;
+}
+
+.details .list-item-title {
+  font-weight: bold;
 }
 
 .summoners {
@@ -283,17 +333,4 @@ body {
 
 .credits a:hover {
   text-decoration: underline;
-}
-
-.info-text h1 a:active,
-.info-text h1 a:focus,
-.info-text h1 a:visited,
-.info-text h1 a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.info-text h1 a:hover {
-  color: #aaa;
-  transition: all 0.3s ease;
 }
