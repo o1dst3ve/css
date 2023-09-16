@@ -19,19 +19,16 @@ body {
 
 .avatar {
   position: relative;
-  width: 350px;
-  border-radius: 28px;
-}
-
-.avatar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle 250px, transparent  0, black 80%);
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .avatar img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ph-info {
@@ -48,8 +45,8 @@ body {
 .avatar .peepoClown {
   position: absolute;
   width: 155px;
-  top: 60px;
-  left: 90px;
+  top: -5px;
+  left: 45px;
   border-radius: 50%;
   overflow: hidden;
   opacity: 0;
@@ -67,6 +64,7 @@ body {
   display: flex;
   margin: 0;
   margin-bottom: 20px;
+  padding-top: 30px;
 }
 
 .info-title {
@@ -187,7 +185,7 @@ body {
 .details {
   margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: 30px;
+  margin-left: 70px;
   display: flex;
   flex-direction: column;
 }
