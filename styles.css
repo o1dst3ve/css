@@ -184,12 +184,26 @@ body {
   background-image: url("./images/lycan-bg.png");
 }
 
+.summoner.visage {
+  background-image: url("./images/visage-bg.png");
+  background-position: 0px center;
+}
+
 .summoner.lycan .appear-img {
   scale: 1.2 1.4;
 }
 
 .summoner.lone-druid .appear-img {
   scale: 1.2 1.2;
+}
+
+.summoner.visage .appear-img {
+  scale: 1.3 1.6;
+  translate: 20px 40px;
+}
+
+.summoner.visage:hover .appear-img {
+  translate: 20px -60px;
 }
 
 .summoner::before  {
