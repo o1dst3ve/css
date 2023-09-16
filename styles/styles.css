@@ -16,6 +16,35 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.info-card {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.page-bg {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.page-bg img {
+  box-shadow: 0 0 5px rgba(200, 200, 200, .1);
+}
+
+.page-bg .img-block {
+  filter: blur(1000px);
+}
+
+
 .avatar {
   position: relative;
   width: 260px;
@@ -135,43 +164,6 @@ body {
   filter: grayscale(0);
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.card {
-  padding: 15px 20px;
-  border-radius: 20px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
-}
-
-.card h1,
-.card h2,
-.card h3,
-.card h4 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.card li {
-  margin-bottom: 5px;
-  transition: all 0.2s ease-in;
-  cursor: default;
-  width: fit-content;
-}
-
-.card li:hover {
-  transform: translateX(7px);
-}
-
-.quotes li {
-  font-style: italic;
-}
-
 .details {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -194,11 +186,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
-  margin-bottom: 20px;
   perspective: 1000px;
-  padding: 30px 10px;
-  background-color: #222;
 }
 
 .summoners .title {
@@ -321,8 +309,15 @@ body {
 }
 
 .credits {
-  margin: 80px auto 0;
+  margin: 80px 0 0;
   font-size: 0.85em;
+  opacity: .35;
+  transition: opacity .3s ease-out;
+  width: fit-content;
+}
+
+.credits:hover {
+  opacity: 1;
 }
 
 .credits a:visited,
@@ -339,17 +334,12 @@ body {
 
 
 /* QUOTES */
-
 .random-quotes {  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  padding: 30px 10px;
   height: 200px;
-  background-color: #222;
 }
 
 .random-quotes .quote {
