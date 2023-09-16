@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteWrapper = document.querySelector("#quote-wrapper");
   const quoteContainer = document.querySelector("#quote-container");
   const quoteAuthorContainer = document.querySelector("#quote-author");
-  const quoteInterval = setInterval(() => renderQuote(), 10000);
+  const quoteInterval = setInterval(() => renderQuote(), 15000);
   const QUOTES = [
     "Не тот Керри кто крипов добивал, а тот кто трон не просрал.",
     "Не тот волк кто люканом называется, а тот кто из леса не выбирается.",
