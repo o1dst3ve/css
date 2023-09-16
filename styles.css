@@ -186,7 +186,7 @@ body {
 
 .summoner.visage {
   background-image: url("./images/visage-bg.png");
-  background-position: 0px center;
+  background-position: -30px center;
 }
 
 .summoner.lycan .appear-img {
@@ -203,7 +203,7 @@ body {
 }
 
 .summoner.visage:hover .appear-img {
-  translate: 20px -60px;
+  translate: 20px -90px;
 }
 
 .summoner::before  {
