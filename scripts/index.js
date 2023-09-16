@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.remove("prevent-transition");
+
   const quoteWrapper = document.querySelector("#quote-wrapper");
   const quoteContainer = document.querySelector("#quote-container");
   const quoteAuthorContainer = document.querySelector("#quote-author");

@@ -9,6 +9,29 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, .8);
+  transition: .3s ease-in-out;
+}
+
+.prevent-transition *,
+.prevent-transition *::before,
+.prevent-transition *::after {
+  transition: unset !important;
+}
+
 *,
 *::after,
 *::before {
