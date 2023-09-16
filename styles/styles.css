@@ -52,6 +52,10 @@ body {
   overflow: hidden;
 }
 
+.avatar-wrapper {
+  margin-left: 20px;
+}
+
 .avatar::before {
   content: "";
   width: 100%;
@@ -221,7 +225,7 @@ body {
 .details {
   margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: 70px;
+  margin-left: 60px;
   display: flex;
   flex-direction: column;
 }
