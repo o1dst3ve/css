@@ -68,7 +68,7 @@ body {
 
 .socials a {
   margin-right: 14px;
-  transition: color .2s ease-out, opacity .2s ease-out;
+  transition: color .2s ease-out, opacity .2s ease-out, filter .2s ease-out;
   opacity: .6;
   color: #fff;
 }
@@ -92,6 +92,8 @@ body {
 .socials a.ph img {
   transform: scale(1.8);
   height: 100%;
+  filter: grayscale(100%);
+  transition: filter .6s ease-out;
 }
 
 .socials a.ph {
@@ -100,7 +102,6 @@ body {
   overflow: hidden;
   position: relative;
   bottom: 2px;
-  margin-left: -5px;
 }
 
 .socials a.youtube {
@@ -128,6 +129,10 @@ body {
 
 .socials a.twitch:hover {
   color: #9146FF;
+}
+
+.socials a.ph:hover img {
+  filter: grayscale(0);
 }
 
 .container {
