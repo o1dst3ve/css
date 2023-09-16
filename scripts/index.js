@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Лучший Бейн не тот, кто сон давал, а кто в амулете врага поджидал.",
     "Работа не волк, волк — Ликан, a работа это ворк.",
     "Мне не важно прав он или нет, он мой брат, и я за него байбекнусь.",
-    "Ликан слабее Мк и Марса, на на арене не выступает.",
+    "Ликан слабее Мк и Марса, но на арене не выступает.",
     "Лучше перо под ребро, чем тиммейт MieRo.",
     "Время не лечит, мека лечит, а время — оно между циферками, обозначающими счет.",
     "Не гоняйте на Баре пацаны, вы матерям еще нужны!",
@@ -35,9 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
   const AUTHORS = ["artur_matix", "CornFY", "o1dst3ve", "Rochersha", "fothr1s", "tirexdxd", "boy_abstract", "blooming_c0rpse", "andreyhed", "chpopik", "gundrik", "yana_ciist", "seconduniQuee", "katyaxoxo", "katyaxexe", "katyaxixi"];
   const RANDOMS = "1,4,2,5,3,4,4,2,1,6,4,3,2,5,".repeat(100);
+  const IS_SAFARI = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   let currentQuote = QUOTES[0];
   let currentAuthor = AUTHORS[0];
+
+  if (IS_SAFARI) {
+    document.body.innerHTML = "I'm too lazy, use Chrome to access this shitty website :)"
+  }
 
   renderQuote(false);
 
