@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (IS_SAFARI) {
     document.body.innerHTML = "I'm too lazy, use Chrome to access this shitty website :)"
+    return;
   }
 
   renderQuote(false);
